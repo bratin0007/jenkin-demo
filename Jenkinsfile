@@ -2,27 +2,27 @@ pipeline {
     agent any
 
     stages {
-        stage('devops-checkout') {
+        stage('prod-devops-checkout') {
             steps {
                 echo 'checkout the project in the github'
             }
         }
-        stage('devops-build') {
+        stage('prod-devops-build') {
             steps {
                 echo 'build the project and generate the jar file '
             }
         }
-        stage('devops-image') {
+        stage('prod-devops-image') {
             steps {
                 echo 'creating the image'
             }
         }
-        stage('devops-push-image') {
+        stage('prod-devops-push-image') {
             steps {
                 echo 'push the image'
             }
         }
-        stage('devops-pull-image') {
+        stage('prod-devops-pull-image') {
             steps {
                 echo 'Pull the image'
             }
